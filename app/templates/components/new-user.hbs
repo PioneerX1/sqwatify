@@ -11,39 +11,22 @@
         <div id="signup">
           <h1>Sign Up for Free</h1>
 
-          <form action="/" method="post">
-
-          <div class="top-row">
-            <div class="field-wrap">
-              <label>
-                First Name<span class="req">*</span>
-              </label>
-              <input type="text" required autocomplete="off" />
-            </div>
-
-            <div class="field-wrap">
-              <label>
-                Last Name<span class="req">*</span>
-              </label>
-              <input type="text"required autocomplete="off"/>
-            </div>
-          </div>
-
+          <form>
           <div class="field-wrap">
             <label>
-              Email Address<span class="req">*</span>
+              Username<span class="req">*</span>
             </label>
-            <input type="email"required autocomplete="off"/>
+            {{input value=newUsername id="newUsername"}}
           </div>
 
           <div class="field-wrap">
             <label>
               Set A Password<span class="req">*</span>
             </label>
-            <input type="password"required autocomplete="off"/>
+            {{input value=newPassword id="newPassword"}}
           </div>
 
-          <button type="submit" class="button button-block">Get Started</button>
+          <button class="button button-block" {{action 'signUp' user}}>Get Started</button>
 
           </form>
 
@@ -52,25 +35,25 @@
         <div id="login">
           <h1>Welcome Back!</h1>
 
-          <form action="/" method="post">
+          <form>
 
             <div class="field-wrap">
             <label>
-              Email Address<span class="req">*</span>
+              Username<span class="req">*</span>
             </label>
-            <input type="email"required autocomplete="off"/>
+            {{input value=username id="username"}}
           </div>
 
           <div class="field-wrap">
             <label>
               Password<span class="req">*</span>
             </label>
-            <input type="password"required autocomplete="off"/>
+            {{input value=password id="password"}}
           </div>
 
           <p class="forgot"><a href="#">Forgot Password?</a></p>
 
-          <button class="button button-block">Log In</button>
+          <button class="button button-block" {{action 'logIn' user}}>Log In</button>
 
           </form>
 

@@ -378,8 +378,11 @@ textarea {
   grid-template-rows: 5px;
 }
 
+.navbar-inverse {
+  background-color: $form-bg;
+}
 .jumbotron{
-  color: #ddd;
+  color: $form-bg;
   font-size: 4em;
   font-weight: 500;
   background-color: #1ab188;

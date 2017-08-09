@@ -16,6 +16,12 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase: {
+      apiKey: "AIzaSyAFCh8AofY2__8I4JV_wsvWJr6VfCzuoAs",
+      authDomain: "sqwatify.firebaseapp.com",
+      databaseURL: "https://sqwatify.firebaseio.com",
+      storageBucket: ""
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
